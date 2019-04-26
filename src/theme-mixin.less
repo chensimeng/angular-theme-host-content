@@ -1,0 +1,11 @@
+.themeMixin(@rules) {
+  :host-context(.dark) {
+    @import "theme-dark";
+    @rules();
+  }
+
+  :host-context(.light) {
+    @import "theme-light";
+    @rules();
+  }
+}
