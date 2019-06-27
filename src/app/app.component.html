@@ -1,2 +1,13 @@
 <app-hello></app-hello>
+<app-admin></app-admin>
+<select (input)="setTheme($event.target.value)" title="theme" class="form-control">
+  <option value="">- select theme -</option>
+  <option>classic</option>
+  <option>marine</option>
+  <option>pink</option>
+  <option>wooden</option>
+</select>
+<app-trex [dtTheme]="themes"></app-trex>
 <button nz-button nzType="primary">outside button</button>
+<p>The :host-context() CSS .</p>
+

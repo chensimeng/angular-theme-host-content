@@ -9,22 +9,29 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { HelloComponent } from './hello/hello.component';
+import { AdminComponent } from './admin/admin.component';
+import { TrexComponent } from './trex/trex.component';
+import {ThemeDirective} from './theme.directive';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloComponent
+    HelloComponent,
+    AdminComponent,
+    TrexComponent,
+    ThemeDirective
   ],
-  imports: [
+  imports     : [
     BrowserModule,
     NgZorroAntdModule,
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule
   ],
-  providers: [{ provide: NZ_I18N, useValue: en_US }],
-  bootstrap: [AppComponent]
+  providers   : [ { provide: NZ_I18N, useValue: en_US } ],
+  bootstrap   : [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule {
+}
