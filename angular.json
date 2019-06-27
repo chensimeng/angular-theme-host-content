@@ -32,6 +32,7 @@
               }
             ],
             "styles": [
+              "node_modules/ng-zorro-antd/ng-zorro-antd.less",
               "src/light.less",
               "src/dark.less"
             ],
